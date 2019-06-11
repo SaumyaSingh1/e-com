@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+                android:id="@+id/na"
+                android:icon="@drawable/fashion"
+                android:title="Fashion"/>
+        <item
+                android:id="@+id/nav"
+                android:icon="@drawable/ic_headset_black_24dp"
+                android:title="Electronics"/>
+        <item
+                android:id="@+id/n"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="TVs and Appliances"/>
+        <item
+                android:id="@+id/nu"
+                android:icon="@drawable/ic_toys_black_24dp"
+                android:title="Toys and Baby"/>
+        <item
+                android:id="@+id/nuh"
+                android:icon="@drawable/ic_dashboard_black_24dp"
+                android:title="Grocery"/>
+        <item
+                android:id="@+id/nut"
+                android:icon="@drawable/ic_library_books_black_24dp"
+                android:title="Books and More"/>
+        <item
+                android:id="@+id/nav_home"
+                android:icon="@drawable/bracelets"
+                android:title="Beauty And Personal Care"/>
+
+        <item
+                android:id="@+id/nav_offers"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="Offers"/>
+
+        <item
+                android:id="@+id/nav_notif"
+                android:icon="@drawable/ic_notifications_black_24dp"
+                android:title="Notifications"/>
+        <item
+                android:id="@+id/nav_rewards"
+                android:icon="@drawable/ic_ac_unit_black_24dp"
+                android:title="Rewards"/>
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu
+                xmlns:android="http://schemas.android.com/apk/res/android"
+        >
+
+
+            <item
+                    android:id="@+id/nav_contact"
+                    android:icon="@drawable/ic_phone_in_talk_black_24dp"
+                    android:title="Help Center"/>
+            <item
+                    android:id="@+id/nav_share"
+                    android:actionProviderClass=
+                            "android.widget.ShareActionProvider"
+                    android:icon="@drawable/ic_menu_share"
+                    android:title="@string/menu_share"
+                    tools:ignore="AppCompatResource"/>
+            <item
+                    android:id="@+id/nav_send"
+                    android:actionProviderClass="android.widget.ShareActionProvider"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="@string/menu_send" tools:ignore="AppCompatResource"/>
+        </menu>
+    </item>
+
+</menu>

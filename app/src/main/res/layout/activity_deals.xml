@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        tools:context=".Activity.DealsActivity">
+    <LinearLayout android:layout_width="match_parent"
+                  android:background="@color/colorPrimary"
+                  android:orientation="horizontal"
+                  android:layout_height="48dp">
+
+        <android.support.v7.widget.AppCompatImageView
+                android:layout_width="28dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_menu_black_24dp"
+                android:layout_marginLeft="21dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/navmenu"
+        />
+        <LinearLayout android:layout_width="235dp"
+                      android:layout_marginLeft="6dp"
+
+                      android:layout_gravity="center"
+                      android:layout_height="wrap_content"
+
+                      android:orientation="horizontal">
+
+
+            <android.support.v7.widget.AppCompatEditText android:layout_width="195dp"
+                                                         android:id="@+id/editsearch"
+                                                         android:textStyle="bold"
+                                                         android:hint="Search for items.."
+                                                         android:fontFamily="serif"
+                                                         android:gravity="center"
+
+                                                         android:textSize="16dp"
+                                                         android:layout_gravity="center"
+                                                         android:layout_height="wrap_content">
+
+            </android.support.v7.widget.AppCompatEditText>
+
+
+            <android.support.v7.widget.AppCompatImageView android:layout_width="25dp"
+                                                          android:layout_gravity="center"
+                                                          android:layout_height="match_parent"
+                                                          android:id="@+id/searchicon"
+                                                          app:srcCompat="@drawable/ic_search_black_24dp"
+
+                                                          tools:ignore="VectorDrawableCompat"/>
+        </LinearLayout>
+        <!--<android.support.v7.widget.AppCompatImageView-->
+        <!--android:layout_width="91dp"-->
+        <!--android:layout_height="37dp"-->
+        <!--android:background="@drawable/f"-->
+        <!--android:scaleType="fitStart"-->
+        <!--android:layout_marginLeft="18dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:gravity="center"-->
+
+        <!--/>-->
+
+
+        <android.support.v7.widget.AppCompatImageView android:layout_width="26dp"
+                                                      android:layout_gravity="center"
+                                                      android:id="@+id/btnreward"
+                                                      app:srcCompat="@drawable/ic_shopping_cart_black_24dp"
+                                                      android:layout_marginLeft="12dp"
+                                                      android:layout_height="wrap_content"
+                                                      tools:ignore="VectorDrawableCompat"/>
+
+        <android.support.v7.widget.AppCompatImageView android:layout_width="26dp"
+                                                      android:layout_gravity="center"
+                                                      app:srcCompat="@drawable/ic_notifications_black_24dp"
+                                                      android:layout_marginLeft="5dp"
+                                                      android:layout_height="30dp"
+                                                      android:id="@+id/btnnotif"
+                                                      tools:ignore="VectorDrawableCompat"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_marginTop="0dp"
+            android:padding="4dp"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+        <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_attach_money_black_24dp"
+                android:layout_gravity="center"/>
+        <TextView
+                android:layout_width="100dp"
+                android:layout_height="42dp"
+                android:textColor="#fff"
+                android:id="@+id/cashback"
+                android:text="40% CASHBACK ON 1ST ORDER"
+                android:background="@color/colorPrimary"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="10dp"
+        />
+        <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_shopping_cart_black_24dp"
+
+                android:layout_gravity="center"/>
+        <TextView
+                android:layout_width="100dp"
+                android:layout_height="42dp"
+                android:textSize="10dp"
+                android:textColor="#fff"
+                android:text="CASH oN DELIVERY"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@color/colorPrimary"
+        />
+        <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_directions_run_black_24dp"
+                android:layout_gravity="center"/>
+        <TextView
+                android:layout_width="100dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center"
+                android:text="DOORSTEP RETURN"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:textSize="10dp"
+                android:background="@color/colorPrimary"
+        />
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatImageView android:layout_width="308dp" android:layout_height="194dp"
+                                                  android:layout_marginTop="40dp"
+                                                  android:layout_gravity="center"
+                                                  app:srcCompat="@drawable/download"
+
+
+    />
+    <android.support.v7.widget.AppCompatTextView
+            android:layout_width="206dp"
+            android:fontFamily="@string/title_dashboard"
+            android:text="No Rewards Yet!!"
+            android:textStyle="normal"
+            android:textSize="24sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="60dp"/>
+    <android.support.design.card.MaterialCardView
+
+            app:cardBackgroundColor="@color/colorPrimary"
+            android:layout_marginTop="25dp"
+            android:id="@+id/giftcard"
+            app:cardElevation="2dp"
+            android:background="@drawable/card"
+            android:defaultFocusHighlightEnabled="true"
+            app:cardCornerRadius="8dp"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+
+        <android.support.v7.widget.AppCompatTextView
+                android:layout_width="206dp"
+                android:fontFamily="@string/title_dashboard"
+                android:text="Gift Cards"
+                android:textStyle="normal"
+                android:textSize="24sp"
+                android:textColor="#fff"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="60dp"/>
+    </android.support.design.card.MaterialCardView>
+
+</LinearLayout>

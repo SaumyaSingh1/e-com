@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+
+              android:orientation="vertical"
+              android:layout_height="match_parent"
+              tools:context=".Fragments.ElectronicsFragment">
+   <android.support.design.card.MaterialCardView
+
+            android:layout_marginTop="10dp"
+            app:cardElevation="2dp"
+            android:defaultFocusHighlightEnabled="true"
+            app:cardCornerRadius="8dp"
+            android:layout_width="285dp"
+            android:layout_gravity="center"
+            android:layout_height="265dp">
+
+        <LinearLayout android:layout_width="285dp"
+                      android:orientation="vertical"
+
+                      android:layout_height="255dp">
+            <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="182dp"
+
+                    app:srcCompat="@drawable/mus"
+
+            />
+            <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="220dp"
+                    android:text="M-Biz sweing Machine"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:fontFamily="@string/fui_welcome_back_email_header"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:layout_height="20dp"/>
+            <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="220dp"
+                    android:text=" ❤ELECTRONICS"
+                    android:fontFamily="@font/cabin_sketch"
+                    android:textStyle="bold"
+                    android:textSize="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#78909c"
+                    android:layout_height="20dp"/>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="horizontal"
+                          android:layout_height="29dp">
+
+                <android.support.v7.widget.AppCompatImageView android:layout_width="48dp"
+                                                              android:layout_gravity="center"
+                                                              android:src="@drawable/bestprice"
+                                                              android:scaleType="fitXY"
+                                                              android:clickable="true"
+                                                              android:layout_height="25dp"/>
+
+                <android.support.v7.widget.AppCompatTextView android:layout_width="44dp"
+                                                             android:text=" 99"
+                                                             android:textColor="#fff"
+                                                             android:layout_gravity="center"
+                                                             android:gravity="center"
+                                                             android:textStyle="bold"
+                                                             android:layout_height="24dp"
+                                                             app:fontFamily="@font/cabin_sketch"/>
+
+                <pl.droidsonroids.gif.GifImageView
+                        android:layout_width="162dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/addcart"
+
+                        android:clickable="true"
+                        android:layout_marginLeft="40dp"
+                        android:id="@+id/clickmachine"
+                        android:layout_height="27dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.design.card.MaterialCardView>
+    <android.support.design.card.MaterialCardView
+            app:cardBackgroundColor="#fff"
+            android:layout_marginTop="10dp"
+            app:cardElevation="2dp"
+            android:defaultFocusHighlightEnabled="true"
+            app:cardCornerRadius="8dp"
+            android:layout_width="285dp"
+            android:layout_gravity="center"
+            android:layout_height="265dp">
+
+        <LinearLayout android:layout_width="285dp"
+                      android:orientation="vertical"
+
+                      android:layout_height="255dp">
+            <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="182dp"
+                    app:srcCompat="@drawable/muscle"
+
+            />
+            <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="220dp"
+                    android:text="M-Biz Designer Kurti"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:fontFamily="@string/fui_welcome_back_email_header"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:layout_height="20dp"/>
+            <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="220dp"
+                    android:text=" ❤FASHION"
+
+                    android:textStyle="bold"
+                    android:textSize="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#78909c"
+                    android:layout_height="20dp"/>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="horizontal"
+                          android:layout_height="29dp">
+
+                <android.support.v7.widget.AppCompatImageView android:layout_width="51dp"
+                                                              android:layout_gravity="center"
+                                                              android:src="@drawable/bestprice"
+                                                              android:scaleType="fitXY"
+                                                              android:clickable="true"
+                                                              android:layout_height="25dp"/>
+
+                <android.support.v7.widget.AppCompatTextView android:layout_width="42dp"
+                                                             android:text=" 99"
+                                                             android:layout_gravity="center"
+                                                             android:gravity="center"
+                                                             android:textColor="#fff"
+                                                             android:textStyle="bold"
+                                                             android:layout_height="24dp"
+                                                             app:fontFamily="@font/cabin_sketch"/>
+
+                <pl.droidsonroids.gif.GifImageView
+                        android:layout_width="169dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/addcart"
+
+                        android:clickable="true"
+                        android:layout_marginLeft="40dp"
+                        android:id="@+id/clickmachine2"
+                        android:layout_height="26dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.design.card.MaterialCardView>
+
+
+</LinearLayout>
+</ScrollView>

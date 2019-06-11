@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/container"
+        android:orientation="vertical"
+        android:scrollbars="vertical"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Activity.MainActivity">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="650dp"
+                  android:orientation="vertical"
+    >
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="horizontal"
+                      android:background="#3f51b5"
+                      android:layout_height="48dp">
+
+            <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="28dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_menu_black_24dp"
+                    android:layout_marginLeft="21dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:id="@+id/navmenu"
+            />
+            <LinearLayout android:layout_width="230dp"
+                          android:layout_marginLeft="6dp"
+
+                          android:layout_gravity="center"
+                          android:layout_height="wrap_content"
+
+                          android:orientation="horizontal">
+
+
+                <android.support.v7.widget.AppCompatEditText android:layout_width="199dp"
+                                                             android:id="@+id/editsearch"
+                                                             android:textStyle="bold"
+                                                             android:hint="Search for products.."
+                                                             android:textColor="#fff"
+                                                             android:fontFamily="serif"
+                                                             android:gravity="center"
+                                                             android:textSize="12dp"
+                                                             android:layout_gravity="center"
+                                                             android:layout_height="wrap_content">
+
+                </android.support.v7.widget.AppCompatEditText>
+
+
+                <android.support.v7.widget.AppCompatImageView android:layout_width="25dp"
+                                                              android:layout_gravity="center"
+                                                              android:layout_height="match_parent"
+                                                              android:id="@+id/searchicon"
+                                                              app:srcCompat="@drawable/ic_search_black_24dp"
+
+                                                              tools:ignore="VectorDrawableCompat"/>
+            </LinearLayout>
+            <!--<android.support.v7.widget.AppCompatImageView-->
+            <!--android:layout_width="91dp"-->
+            <!--android:layout_height="37dp"-->
+            <!--android:background="@drawable/f"-->
+            <!--android:scaleType="fitStart"-->
+            <!--android:layout_marginLeft="18dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:gravity="center"-->
+
+            <!--/>-->
+
+
+            <android.support.v7.widget.AppCompatImageView android:layout_width="26dp"
+                                                          android:layout_gravity="center"
+                                                          android:id="@+id/btnreward"
+                                                          app:srcCompat="@drawable/ic_shopping_cart_black_24dp"
+                                                          android:layout_marginLeft="12dp"
+                                                          android:layout_height="wrap_content"
+                                                          tools:ignore="VectorDrawableCompat"/>
+
+            <android.support.v7.widget.AppCompatImageView android:layout_width="26dp"
+                                                          android:layout_gravity="center"
+                                                          app:srcCompat="@drawable/ic_notifications_black_24dp"
+                                                          android:layout_marginLeft="5dp"
+                                                          android:layout_height="30dp"
+                                                          android:id="@+id/btnnotif"
+                                                          tools:ignore="VectorDrawableCompat"/>
+
+        </LinearLayout>
+
+        <android.support.design.card.MaterialCardView
+                app:cardBackgroundColor="@color/colorPrimary"
+                android:layout_marginTop="2dp"
+                app:cardElevation="2dp"
+                android:defaultFocusHighlightEnabled="true"
+                app:cardCornerRadius="8dp"
+                android:layout_width="338dp"
+                android:layout_gravity="center"
+                android:layout_height="196dp">
+
+            <android.support.v4.view.ViewPager android:layout_width="310dp"
+                                               android:layout_height="176dp"
+                                               android:layout_gravity="center"
+                                               android:id="@+id/viewpager"
+                                               android:background="@color/colorPrimary"
+            >
+
+            </android.support.v4.view.ViewPager>
+        </android.support.design.card.MaterialCardView>
+        <LinearLayout
+                android:padding="4dp"
+                android:background="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:orientation="horizontal">
+            <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_attach_money_black_24dp"
+                    android:layout_gravity="center"/>
+            <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="42dp"
+                    android:textColor="#fff"
+                    android:id="@+id/cashback"
+                    android:text="40% CASHBACK ON 1ST ORDER"
+                    android:background="@color/colorPrimary"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="10dp"
+            />
+            <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_shopping_cart_black_24dp"
+
+                    android:layout_gravity="center"/>
+            <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="42dp"
+                    android:textSize="10dp"
+                    android:textColor="#fff"
+                    android:text="CASH oN DELIVERY"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@color/colorPrimary"
+            />
+            <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_directions_run_black_24dp"
+                    android:layout_gravity="center"/>
+            <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="42dp"
+                    android:text="DOORSTEP RETURN"
+                    android:textColor="#fff"
+                    android:gravity="center"
+                    android:textSize="10dp"
+                    android:background="@color/colorPrimary"
+            />
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="42dp"
+                      android:orientation="horizontal"
+        >
+            <android.support.design.card.MaterialCardView android:layout_width="120dp"
+                                                          app:cardBackgroundColor="@color/colorPrimary"
+                                                          app:cardCornerRadius="20dp"
+                                                          android:layout_marginLeft="20dp"
+                                                          android:layout_gravity="center"
+                                                          android:id="@+id/btncategory"
+                                                          android:layout_height="30dp">
+                <android.support.v7.widget.AppCompatTextView android:layout_width="120dp"
+                                                             android:text="Categories"
+                                                             android:layout_gravity="center"
+                                                             android:gravity="center"
+                                                             android:textColor="#fff"
+                                                             android:fontFamily="sans-serif-black"
+                                                             android:textSize="15dp"
+                                                             android:layout_height="36dp"/>
+            </android.support.design.card.MaterialCardView>
+            <android.support.v7.widget.AppCompatTextView android:layout_width="100dp"
+                                                         android:text="Show All"
+                                                         android:layout_gravity="center"
+                                                         android:gravity="center"
+                                                         android:id="@+id/btnshowall"
+                                                         android:textColor="@color/colorAccent"
+                                                         android:layout_marginLeft="100dp"
+                                                         android:fontFamily="sans-serif-black"
+                                                         android:textSize="15dp"
+                                                         android:layout_height="40dp"/>
+
+        </LinearLayout>
+
+        <GridLayout android:layout_width="352dp" android:layout_height="305dp"
+                    android:columnCount="3"
+                    android:rowCount="3"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="17dp"
+                    android:alignmentMode="alignMargins"
+        >
+            <android.support.design.card.MaterialCardView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="24dp"
+                    android:id="@+id/a"
+                    app:cardBackgroundColor="#fff"
+
+            >
+                <LinearLayout android:layout_width="80dp" android:layout_height="80dp"
+                              android:orientation="vertical">
+                    <android.support.v7.widget.AppCompatImageView android:layout_width="78dp"
+                                                                  android:layout_gravity="center"
+                                                                  android:layout_height="46dp"
+                                                                  android:background="#fff"
+                                                                  android:scaleType="fitXY"
+                                                                  android:src="@drawable/fashion"
+                    />
+                    <android.support.v7.widget.AppCompatTextView android:layout_width="80dp"
+                                                                 android:layout_height="30dp"
+                                                                 android:text="Fashion"
+                                                                 android:textColor="#212121"
+                                                                 android:layout_gravity="center"
+                                                                 android:gravity="center"
+                                                                 android:fontFamily="sans-serif-black"
+                    />
+
+                </LinearLayout>
+
+            </android.support.design.card.MaterialCardView>
+            <android.support.design.card.MaterialCardView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:id="@+id/b"
+                    app:cardCornerRadius="24dp"
+                    app:cardBackgroundColor="#fff"
+
+            >
+                <LinearLayout android:layout_width="80dp" android:layout_height="80dp"
+                              android:orientation="vertical">
+                    <android.support.v7.widget.AppCompatImageView android:layout_width="80dp"
+                                                                  android:background="#fff"
+                                                                  android:layout_height="50dp"
+                                                                  android:src="@drawable/powder"
+                    />
+                    <android.support.v7.widget.AppCompatTextView android:layout_width="80dp"
+                                                                 android:layout_height="30dp"
+                                                                 android:text="Fitness"
+                                                                 android:textColor="#212121"
+                                                                 android:layout_gravity="center"
+                                                                 android:gravity="center"
+                                                                 android:fontFamily="sans-serif-black"
+                    />
+
+                </LinearLayout>
+
+            </android.support.design.card.MaterialCardView>
+            <android.support.design.card.MaterialCardView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    app:cardCornerRadius="24dp"
+                    android:layout_margin="10dp"
+                    android:id="@+id/c"
+                    app:cardBackgroundColor="#f5f5f5"
+
+            >
+                <LinearLayout android:layout_width="80dp" android:layout_height="80dp"
+                              android:orientation="vertical">
+                    <android.support.v7.widget.AppCompatImageView android:layout_width="80dp"
+                                                                  android:layout_height="50dp"
+                                                                  android:src="@drawable/jewel"
+                    />
+                    <android.support.v7.widget.AppCompatTextView android:layout_width="80dp"
+                                                                 android:layout_height="30dp"
+                                                                 android:text="Jewellery"
+                                                                 android:textColor="#212121"
+                                                                 android:layout_gravity="center"
+                                                                 android:gravity="center"
+                                                                 android:fontFamily="sans-serif-black"
+                    />
+
+                </LinearLayout>
+
+            </android.support.design.card.MaterialCardView>
+            <android.support.design.card.MaterialCardView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    app:cardCornerRadius="24dp"
+                    android:layout_margin="10dp"
+                    android:id="@+id/d"
+                    app:cardBackgroundColor="#f5f5f5"
+
+            >
+                <LinearLayout android:layout_width="80dp" android:layout_height="80dp"
+                              android:orientation="vertical">
+                    <android.support.v7.widget.AppCompatImageView android:layout_width="80dp"
+                                                                  android:layout_height="50dp"
+                                                                  android:src="@drawable/elec"
+                    />
+                    <android.support.v7.widget.AppCompatTextView android:layout_width="80dp"
+                                                                 android:layout_height="30dp"
+                                                                 android:text="Electronics"
+                                                                 android:textColor="#212121"
+                                                                 android:layout_gravity="center"
+                                                                 android:gravity="center"
+                                                                 android:fontFamily="sans-serif-black"
+                    />
+
+                </LinearLayout>
+
+            </android.support.design.card.MaterialCardView>
+            <android.support.design.card.MaterialCardView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    app:cardCornerRadius="24dp"
+                    android:layout_margin="10dp"
+                    android:id="@+id/e"
+                    app:cardBackgroundColor="#fff"
+
+            >
+                <LinearLayout android:layout_width="80dp" android:layout_height="80dp"
+                              android:orientation="vertical">
+                    <android.support.v7.widget.AppCompatImageView android:layout_width="80dp"
+                                                                  android:layout_height="50dp"
+                                                                  android:background="#fff"
+                                                                  android:src="@drawable/ic_headset_black_24dp"
+                    />
+                    <android.support.v7.widget.AppCompatTextView android:layout_width="80dp"
+                                                                 android:layout_height="30dp"
+                                                                 android:text="Headphone"
+
+                                                                 android:textColor="#212121"
+                                                                 android:layout_gravity="center"
+                                                                 android:gravity="center"
+                                                                 android:fontFamily="sans-serif-black"
+                    />
+
+                </LinearLayout>
+
+            </android.support.design.card.MaterialCardView>
+            <android.support.design.card.MaterialCardView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    app:cardCornerRadius="24dp"
+                    android:layout_margin="10dp"
+                    android:id="@+id/f"
+                    app:cardBackgroundColor="#f5f5f5"
+
+            >
+                <LinearLayout android:layout_width="80dp" android:layout_height="80dp"
+                              android:orientation="vertical">
+                    <android.support.v7.widget.AppCompatImageView android:layout_width="80dp"
+                                                                  android:layout_height="50dp"
+
+                                                                  android:src="@drawable/cooki"
+                    />
+                    <android.support.v7.widget.AppCompatTextView android:layout_width="80dp"
+                                                                 android:layout_height="30dp"
+                                                                 android:text="Snacks"
+                                                                 android:textColor="#212121"
+                                                                 android:layout_gravity="center"
+                                                                 android:gravity="center"
+                                                                 android:fontFamily="sans-serif-black"
+                    />
+
+                </LinearLayout>
+
+            </android.support.design.card.MaterialCardView>
+            <android.support.design.card.MaterialCardView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    app:cardCornerRadius="24dp"
+                    android:layout_margin="10dp"
+                    android:id="@+id/g"
+                    app:cardBackgroundColor="#f5f5f5"
+
+            >
+                <LinearLayout android:layout_width="80dp" android:layout_height="80dp"
+                              android:orientation="vertical">
+                    <android.support.v7.widget.AppCompatImageView android:layout_width="80dp"
+                                                                  android:layout_height="50dp"
+                                                                  android:src="@drawable/cooler"
+                    />
+                    <android.support.v7.widget.AppCompatTextView android:layout_width="80dp"
+                                                                 android:layout_height="30dp"
+                                                                 android:text="Gadgets"
+                                                                 android:textColor="#212121"
+                                                                 android:layout_gravity="center"
+                                                                 android:gravity="center"
+                                                                 android:fontFamily="sans-serif-black"
+                    />
+
+                </LinearLayout>
+
+            </android.support.design.card.MaterialCardView>
+            <android.support.design.card.MaterialCardView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:id="@+id/h"
+                    app:cardCornerRadius="24dp"
+                    app:cardBackgroundColor="#f5f5f5"
+
+            >
+                <LinearLayout android:layout_width="80dp" android:layout_height="80dp"
+                              android:orientation="vertical">
+                    <android.support.v7.widget.AppCompatImageView android:layout_width="80dp"
+                                                                  android:layout_height="50dp"
+                                                                  android:src="@drawable/d"
+                    />
+                    <android.support.v7.widget.AppCompatTextView android:layout_width="80dp"
+                                                                 android:layout_height="30dp"
+                                                                 android:text="Beauty"
+                                                                 android:textColor="#212121"
+                                                                 android:layout_gravity="center"
+                                                                 android:gravity="center"
+                                                                 android:fontFamily="sans-serif-black"
+                    />
+
+                </LinearLayout>
+
+            </android.support.design.card.MaterialCardView>
+            <android.support.design.card.MaterialCardView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:id="@+id/i"
+                    app:cardCornerRadius="24dp"
+                    app:cardBackgroundColor="#f5f5f5"
+
+            >
+                <LinearLayout android:layout_width="80dp" android:layout_height="80dp"
+                              android:orientation="vertical">
+                    <android.support.v7.widget.AppCompatImageView android:layout_width="80dp"
+                                                                  android:layout_height="50dp"
+                                                                  android:src="@drawable/groc"
+                    />
+                    <android.support.v7.widget.AppCompatTextView android:layout_width="80dp"
+                                                                 android:layout_height="30dp"
+                                                                 android:text="Decoration"
+                                                                 android:textColor="#212121"
+                                                                 android:layout_gravity="center"
+                                                                 android:gravity="center"
+                                                                 android:fontFamily="sans-serif-black"
+                    />
+
+                </LinearLayout>
+
+            </android.support.design.card.MaterialCardView>
+
+
+        </GridLayout>
+
+    </LinearLayout>
+
+
+    <android.support.design.widget.BottomNavigationView
+            android:id="@+id/nav_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary"
+            app:menu="@menu/bottom_nav_menu"/>
+
+
+</LinearLayout>
+</ScrollView>

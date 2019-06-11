@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        android:layout_width="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="match_parent">
+
+<LinearLayout
+              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="vertical"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="horizontal"
+                  android:background="@color/colorPrimary"
+                  android:layout_height="48dp">
+
+        <android.support.v7.widget.AppCompatImageView
+                android:layout_width="28dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_menu_black_24dp"
+                android:layout_marginLeft="21dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/navmenu"
+        />
+        <LinearLayout android:layout_width="235dp"
+                      android:layout_marginLeft="6dp"
+                      android:layout_gravity="center"
+                      android:layout_height="wrap_content"
+
+                      android:orientation="horizontal">
+
+
+            <android.support.v7.widget.AppCompatEditText android:layout_width="195dp"
+                                                         android:id="@+id/editsearch"
+                                                         android:textStyle="bold"
+                                                         android:hint="Search for items.."
+
+                                                         android:fontFamily="serif"
+                                                         android:gravity="center"
+                                                         android:textSize="12dp"
+                                                         android:layout_gravity="center"
+                                                         android:layout_height="wrap_content">
+
+            </android.support.v7.widget.AppCompatEditText>
+
+
+            <android.support.v7.widget.AppCompatImageView android:layout_width="25dp"
+                                                          android:layout_gravity="center"
+                                                          android:layout_height="match_parent"
+                                                          android:id="@+id/searchicon"
+                                                          app:srcCompat="@drawable/ic_search_black_24dp"
+
+                                                          tools:ignore="VectorDrawableCompat"/>
+        </LinearLayout>
+        <!--<android.support.v7.widget.AppCompatImageView-->
+        <!--android:layout_width="91dp"-->
+        <!--android:layout_height="37dp"-->
+        <!--android:background="@drawable/f"-->
+        <!--android:scaleType="fitStart"-->
+        <!--android:layout_marginLeft="18dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:gravity="center"-->
+
+        <!--/>-->
+
+
+        <android.support.v7.widget.AppCompatImageView android:layout_width="26dp"
+                                                      android:layout_gravity="center"
+                                                      android:id="@+id/btnreward"
+                                                      app:srcCompat="@drawable/ic_shopping_cart_black_24dp"
+                                                      android:layout_marginLeft="12dp"
+                                                      android:layout_height="wrap_content"
+                                                      tools:ignore="VectorDrawableCompat"/>
+
+        <android.support.v7.widget.AppCompatImageView android:layout_width="26dp"
+                                                      android:layout_gravity="center"
+                                                      app:srcCompat="@drawable/ic_notifications_black_24dp"
+                                                      android:layout_marginLeft="5dp"
+                                                      android:layout_height="30dp"
+                                                      android:id="@+id/btnnotif"
+                                                      tools:ignore="VectorDrawableCompat"/>
+
+    </LinearLayout>
+    <android.support.design.card.MaterialCardView
+            app:cardBackgroundColor="#f5f5f5"
+            android:layout_marginTop="16dp"
+            app:cardElevation="2dp"
+            android:defaultFocusHighlightEnabled="true"
+            app:cardCornerRadius="8dp"
+            android:layout_width="285dp"
+            android:layout_gravity="center"
+            android:layout_height="265dp">
+
+        <LinearLayout android:layout_width="285dp"
+                      android:orientation="vertical"
+                      android:background="#fff"
+                      android:layout_height="255dp">
+            <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="182dp"
+                    android:background="#fff"
+                    app:srcCompat="@drawable/kb"
+
+           />
+                <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="220dp"
+                        android:text="M-Biz Fasinable Kurti"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:fontFamily="@string/fui_welcome_back_email_header"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/colorAccent"
+                        android:layout_height="20dp"/>
+
+            <LinearLayout android:layout_width="261dp" android:layout_height="49dp"
+                          android:orientation="horizontal">
+                <android.support.v7.widget.AppCompatTextView android:layout_width="54dp" android:layout_height="40dp"
+                                                             android:textSize="20dp" android:textStyle="bold"
+                                                             android:layout_gravity="center"
+                                                             android:gravity="center"
+                                                             android:text="❤"/>
+                <android.support.v7.widget.AppCompatImageButton
+                        android:layout_width="67dp"
+                        android:id="@+id/addcart"
+                        android:background="@drawable/buttondsn"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="135dp"
+                        android:src="@drawable/ic_add_shopping_cart_black_24dp"
+                        android:layout_height="40dp"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.design.card.MaterialCardView>
+
+    <android.support.design.card.MaterialCardView
+            app:cardBackgroundColor="@color/colorPrimary"
+            android:layout_marginTop="15dp"
+            app:cardElevation="2dp"
+
+            android:defaultFocusHighlightEnabled="true"
+            app:cardCornerRadius="8dp"
+            android:layout_width="349dp"
+            android:layout_gravity="center"
+            android:layout_height="91dp">
+        <android.support.v7.widget.AppCompatTextView
+                android:layout_width="340dp"
+                android:fontFamily="@string/title_dashboard"
+                android:textColor="#fff"
+                android:text=" A long top, generally of knee-length, paired with Salwar or Churidar and Dupatta is what comprises the Salwar-Kurti-Dupatta get-up."
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="80dp"/>
+    </android.support.design.card.MaterialCardView>
+    <android.support.design.card.MaterialCardView
+            app:cardBackgroundColor="@color/colorPrimary"
+            android:layout_marginTop="15dp"
+            app:cardElevation="2dp"
+
+            android:defaultFocusHighlightEnabled="true"
+            app:cardCornerRadius="8dp"
+            android:layout_width="349dp"
+            android:layout_gravity="center"
+            android:layout_height="96dp">
+        <android.support.v7.widget.AppCompatTextView
+                android:layout_width="191dp"
+                android:fontFamily="@string/title_dashboard"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:text="Delivery Details"
+                android:gravity="center"
+                android:layout_height="wrap_content"/>
+        <android.support.v7.widget.AppCompatTextView
+                android:layout_width="207dp"
+                android:fontFamily="@string/title_dashboard"
+                android:textColor="#fff"
+                android:layout_marginTop="20dp"
+                android:textSize="15dp"
+                android:layout_marginLeft="18dp"
+                android:text="2 days , Monday | Rs.40"
+                android:gravity="center"
+                android:layout_height="wrap_content"/>
+
+        <Button
+                android:id="@+id/btnadd1"
+                android:layout_width="99dp"
+                android:layout_height="22dp"
+                android:textColor="#fff"
+                android:layout_marginLeft="36dp"
+                android:drawableRight="@drawable/ic_ac_unit_black_24dp"
+                android:layout_marginTop="50dp"
+                android:background="@color/colorPrimary"
+                android:text="rate"/>
+    </android.support.design.card.MaterialCardView>
+
+    <android.support.design.card.MaterialCardView
+            android:layout_width="130dp"
+            app:cardBackgroundColor="@color/colorAccent"
+            android:layout_height="44dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginLeft="240dp"
+            app:cardCornerRadius="24dp"
+            android:id="@+id/a"
+    >
+    <Button
+            android:layout_width="115dp"
+            android:layout_height="35dp"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/ic_menu_share"
+            android:background="@color/colorAccent"
+            android:text="share"/>
+    </android.support.design.card.MaterialCardView>
+
+</LinearLayout>
+</ScrollView>

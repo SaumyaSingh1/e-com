@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1047342672419",
+    "firebase_url": "https://businessapp-6935f.firebaseio.com",
+    "project_id": "businessapp-6935f",
+    "storage_bucket": "businessapp-6935f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1047342672419:android:b4213be5517d9004",
+        "android_client_info": {
+          "package_name": "com.saumya.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1047342672419-d1tuc81877eh6pqrdcrll72806nr2co1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.saumya.app",
+            "certificate_hash": "8cff96e5e8b61cd5acff0d1e0f3e7268c2dda4a2"
+          }
+        },
+        {
+          "client_id": "1047342672419-8pevni3p8hlk7rcpn9j7mh2n3j9rlr7r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkHxSulptzFm4-HTCkCm_UcAxTQNwrPT8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1047342672419-8pevni3p8hlk7rcpn9j7mh2n3j9rlr7r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
